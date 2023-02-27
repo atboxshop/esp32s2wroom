@@ -2,7 +2,7 @@
 #include <Adafruit_NeoPixel.h>
 #include <stdlib.h>
 
-#define PIN            20
+#define PIN            15
 #define NUMPIXELS      64 //only 64 pixel onboard
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB);
 int delayval = 5;
