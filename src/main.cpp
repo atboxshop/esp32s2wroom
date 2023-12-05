@@ -2,10 +2,10 @@
 #include <Adafruit_NeoPixel.h>
 #include <stdlib.h>
 
-#define PIN            15
+#define PIN            18
 #define NUMPIXELS      64 //only 64 pixel onboard
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB);
-int delayval = 5;
+int delayval = 100;
 int brightness = 5;
 int i;
 int x = 10;
@@ -60,7 +60,7 @@ void loop() {
     //brightness = random(255);
   }
   //delay(1000); // Delay for a period of time (in milliseconds).
-  for(i=0; i <= 64; i++)
+  for(i=64; i >= 0; i--)
   {
     Serial.println("OFF");
     pixels.setPixelColor(i, pixels.Color(0,0,0)); //off
